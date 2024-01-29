@@ -1,0 +1,677 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: none;
+    font-size: 16px;
+}
+
+:root{
+    --bg-light-orange:#fdf6ed;
+}
+
+/* universal css start */
+
+.text-orange{
+    color: #EA512E;
+}
+
+.text-black{
+    color: #1B0238;
+}
+
+.text-silver{
+    color: #6B6B84;
+}
+
+.bg-light-orange{
+    background-color: #fdf6ed;
+}
+
+.bg-orange{
+    background-color: #EA512E;
+}
+
+.bg-light-yellow{
+    background-color: #fee9ca;
+}
+
+.bg-yellow{
+    background-color: #f5890d !important;
+}
+
+.mt-10{
+    margin-top: 100px;
+}
+
+.mt-15{
+    margin-top: 150px;
+}
+
+.mt-20{
+    margin-top: 200px;
+}
+
+.pb-70{
+    padding-bottom: 70px;
+}
+
+.pd-100{
+    padding-top: 100px;
+}
+
+.pd-100{
+    padding-bottom: 100px;
+}
+
+.btn{
+    color: #fff;
+    display: inline-block;
+    padding: 12px 35px;
+    font-size: 16px;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: 0.5s ease;
+    position: relative;
+    -webkit-transition: 0.5s;
+    background-color: #EA512E;
+}
+
+.btn:hover{
+    color: #fff;
+    background-color: #f5890d;
+}
+
+p{
+    margin-bottom: 15px;
+    line-height: 1.8;
+    color: #6B6B84;
+    font-weight: 400;
+    font-family: "Roboto",sans-serif;
+    font-size: 16px;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1,h2,h3,h4,h5,h6{
+    color: #1b0238;
+    font-family: "Catamaran",sans-serif;
+    font-weight: bold;
+}
+
+img{
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* universal css end */
+
+/* header section start */
+
+a.active{
+    color: #EA512E !important;
+}
+
+a.nav-link:hover,a.dropdown-item:hover{
+    color: #EA512E !important;
+    transition: 0.2s linear;
+}
+
+.dropdown-menu{
+    width: 280px;
+    border: none;
+    border-radius: 0px;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0px 0px 15px 0px #ccc;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+    margin-top: 10px;
+}
+
+/* header section end */
+
+
+/* poster section start */
+
+.poster{
+    width: 100%;
+    height: 700px;
+    background-image: url(../img/main-banner-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.shape-1{
+    top: 3.5%;
+    left: 0.7%;
+    animation: move 2s linear alternate infinite;
+}
+
+.shape-2{
+    top: 3.5%;
+    left: 50%;
+    animation: move2 2s linear alternate infinite;
+}
+
+.shape-3{
+    top: 61%;
+    left: 0.7%;
+    z-index: 9;
+    animation: move 2s linear alternate infinite;
+}
+
+.shape-4{
+    top: 61%;
+    left: 50%;
+    animation: move2 2s linear alternate infinite;
+}
+
+.poster h1{
+    font-size: 60px;
+    margin-top: 20px;
+    color: #1B0238;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+@keyframes move {
+
+    0%{}
+    100%{
+        left:3%;
+    }
+}
+
+@keyframes move2 {
+    
+    0%{}
+
+    100%{
+        left: 53%;
+    }
+
+}
+
+/* poster section end */
+
+
+/* who section start */
+
+
+.who span,
+.popular span,
+.teacher span,
+.upcoming span,
+.core-value span,
+.testimonial span{
+    font-weight: 600;
+    font-size: 20px;
+    color: #EA512E;
+    /* font-family: 'Sacramento',cursive; */
+}
+
+.who h3,
+.popular h3,
+.teacher h3,
+.upcoming h3,
+.core-value h3,
+.testmonial h3{
+    font-size: 45px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.who .image{
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.who .image::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #EA512E;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    border-radius: 50%;
+    transition: 0.5s;
+    animation: border-transform-default 10s linear infinite alternate forwards;
+}
+
+.who .image img{
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.who .image::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #f5890d;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    border-radius: 50%;
+    transition: 0.5s;
+    animation: border-trasform-default 50s linear infinite alternate forwards;
+}
+
+.who ul li{
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.who ul li span{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #EA512E;
+    display: inline-block;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 6px;
+    transition: all 0.5s;
+    font-family: "Catamaran",sans-serif;
+}
+
+.who ul li:hover span{
+    background-color: #0df520;
+    transition: all 1s ease-in;
+}
+
+
+@keyframes border-trasform-default {
+
+    0%, 100%{
+        border-radius: 63% 37% 54% 46% 55% 48% 52% 45%;
+    }
+
+    14%{
+        border-radius: 40% 60% 54% 46% 49% 60% 40% 51%;
+    }
+
+    28% {
+        border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
+    }
+
+    42% {
+        border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
+    }
+
+    56% {
+        border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
+    }
+
+    70% {
+        border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
+    }
+
+    84% {
+        border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
+    }
+    
+}
+
+/* who section end */
+
+
+/* famous section start */
+
+
+.famous .card:hover img{
+
+    /* transform: scale(1.07); */
+
+    transform: rotate(2deg) scale(1.2);
+    transition: all 0.3s linear;
+}
+
+/* famous section end */
+
+
+/* core section start */
+
+
+.core-value .number{
+    width: 60px;
+    height: 60px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 1.5%;
+    margin-right: 20px;
+    font-size: 25px;
+    color: #1b0238;
+    border: 3px solid #fff;
+    outline: 1px solid #e5e4e4;
+    outline-offset: 2px;
+    transition: 0.5s;
+    cursor: pointer;
+    font-family: "Catamaran",sans-serif;
+}
+
+.core-value .number:hover{
+    color: #fff;
+    transition: 0.5s;
+    background-color: #EA512E !important;
+    outline-color: #EA512E;
+    z-index: 1;
+}
+
+/* core section end */
+
+
+/* Teacher section start */
+
+.teacher{
+    background-image: url(../img/teacher-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -9 !important;
+}
+
+.teacher .social-media{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: -70px;
+    transition: all 0.5s ease-in;
+}
+
+.teacher .teacher-image{
+    z-index: 9 !important;
+}
+
+.teacher .teacher-image::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: #ea512e;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    border-radius: 50%;
+    transition: 0.5s;
+    animation: border-transform-default 20s linear infinite alternate forwards;
+}
+
+.teacher .teacher-image:hover .social-media{
+    margin-bottom: 0px;
+    transition: all 0.5s ease-out;
+}
+
+.teacher .social-media li{
+    width: 30px;
+    height: 30px;
+    line-height: 32px;
+    background-color: #EA512E;
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+.teacher .social-media li a{
+    color: white;
+}
+
+.teacher .social-media li:hover{
+    background-color: #f5890d;
+    transition: 0.3s ease;
+}
+
+@keyframes border-transform-default {
+
+    0%, 100%{
+        border-radius: 63% 37% 54% 46% 55% 48% 52% 45%;
+    }
+
+    14%{
+        border-radius: 40% 60% 54% 46% 49% 60% 40% 51%;
+    }
+
+    28% {
+        border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
+    }
+
+    42% {
+        border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
+    }
+
+    56% {
+        border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
+    }
+
+    70% {
+        border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
+    }
+
+    84% {
+        border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
+    }
+    
+}
+
+/* Teacher section end */
+
+
+/* Testimonial section start */
+
+
+.card.teacher{
+    height: auto;
+    padding: 30px;
+    text-align: center;
+    border-radius: 50%;
+    border: none;
+    background-color: #fee9ca;
+}
+
+.card.teacher div{
+    width: 65px;
+    height: auto;
+    line-height: 75px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: auto;
+    transition: all 0.3s linear;
+    margin-bottom: 10px;
+}
+
+.card.teacher :hover div{
+    background:#EA512E;
+    transition: all 0.3s linear;
+}
+
+/* .card.teacher :hover div .text-white2{
+    background:#fff;
+} */
+
+.testimonial .nav-button button{
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 10px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #EA512E;
+    transition: 0.3s linear;
+    margin-left: -40px;
+    margin-right: -40px;
+}
+
+.testimonial .nav-button button:hover{
+    background-color: #f5890d;
+    transition: 0.3s linear;
+}
+
+.testimonial .bird{
+    margin-left: 100px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    padding: 10px;
+}
+
+/* Testimonial section end */
+
+
+/* Test section start */
+
+.slider-wrap{
+    position: relative;
+    overflow-x: hidden;
+    height: 100px;
+}
+
+.slider-main{
+    width: 200%;
+    position: absolute;
+}
+
+.item{
+    width: 400px;
+    display: inline-block;
+}
+
+.item .card{
+    transition: 0.5s ease-in-out;
+}
+
+/* Test section start */
+
+
+/* Event section start */
+
+.event{
+    position: relative;
+    background-image: url(../img/event-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* Event section end */
+
+/* blog section start */
+
+.blog img{
+    border-radius: 10px;
+}
+/* blog section end */
+
+
+/* footer section start */
+
+.footer{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.836),rgba(0, 0, 0, 0.89)) ,url(../img/footer-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-bottom: 50px;
+}
+
+.footer h3{
+    color: white;
+    padding-top: 120px;
+}
+
+.footer p{
+    color: white;
+}
+
+.footer hr{
+    width: 60px;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+
+.footer h4{
+    color: white;
+    padding-top: 110px;
+}
+
+.photo img{
+    width: 30%;
+}
+
+/* a .conta:hover{
+    color: #EA512E !important;
+    transition: 0.4s;
+} */
+
+/* footer section end */
+
+/* last section start */
+
+.last{
+    background-color: blue;
+}
+/* last section end */
+
+
+/* Responsive Start */
+
+@media screen and (max-width:575px)
+{
+
+    .poster{
+        height: 500px;
+    }
+
+    .poster p{
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .poster h1{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .poster .btn{
+        display: inline;
+        padding: 0px 15px;
+    }
+
+    .who .who-we{
+        text-align: center;
+    }
+
+    .who h3,
+    .core-value h3,
+    .teacher h3{
+        font-size: 25px;
+    }
+
+    .core-value .col-lg-6{
+        text-align: center;
+        padding: 0px;
+    }
+
+    .core-value .number{
+        text-align: center;
+    }
+
+    .testimonial .bird{
+        margin-left: 30px;
+    }
+}
+
+/* Responsive End */
